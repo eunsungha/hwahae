@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/rvitem_layout"
+    >
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:contentPadding="2dp"
+        app:cardBackgroundColor="@color/colorGray"
+        android:id="@+id/rvitem_cdview"
+        app:cardCornerRadius="10dp"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/rvitem_ivthumbnail"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/black"
+            android:scaleType="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/rvitem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvitem_cdview"
+        android:text="동국제약 센텔리안 24파워 부스팅 포뮬러"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/rvitem_tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvitem_title"
+        android:text="10,080원"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
